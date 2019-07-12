@@ -1,0 +1,247 @@
+body{
+  background-color: #0094AD;
+}
+.title{
+  color: #54007A;
+  font-size: 75px;
+  font-family: 'Barriecito', cursive;
+  text-align: center;
+}
+
+.intro{
+  color: #612E79;
+  font-size: 30px;
+  font-family: 'Barriecito', cursive;
+  text-align: center;
+}
+
+.quotes{
+  color: #AD4E00;
+  font-size: 20px;
+  font-family: 'DM Serif Display', serif;
+}
+.button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0094AD;
+  border: none;
+  color: #612E79;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.image{
+  display: block;
+  margin: 0 auto;
+}
+.afterquotes{
+  background-color: #612E79;
+}
+.add{
+  color: #0094AD;
+  font-size: 20px;
+  font-family: 'Barriecito', cursive;
+  text-align: center;
+}
+.buttonlink{
+  text-decoration: none;
+}
+.body{
+  margin-left: 27%;
+}
+.buttonaligne{
+  text-align: center;
+}
+.contents{
+  position: fixed;
+  top:200px;
+  left:0px;
+  color :#AD4E00;
+  background : #AD4E00;
+  border: 2px solid black;
+  padding: 2px;
+  padding-left: 2px;
+  text-align: center;
+  padding-right: 0px;
+  padding-left: 20px;
+  list-style-type: none;
+  z-index: 6;
+}
+
+.games{
+  position: absolute;
+  top: 190px;
+  left:75%;
+  padding: 2px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-left: 20px;
+  width: 25%;
+  height: 25%;
+  z-index: 5;
+}
+.retrogameimage{
+  position: absolute;
+  top:410px;
+  left:75%;
+  padding: 2px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-left: 20px;
+  width: 25%;
+  height: 50%;
+  z-index: 1;
+}
+.retrogameimage2{
+  position: absolute;
+  top:793px;
+  left:75%;
+  padding: 2px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-left: 20px;
+  width: 25%;
+  height: 25%;
+  z-index: 3;
+}
+.retrogameimage3{
+  position: fixed;
+  top: 0px;
+  left:75%;
+  padding: 2px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-left: 20px;
+  width: 25%;
+  height: 25%;
+  z-index: 6;
+}
+a{
+  text-decoration: none;
+}
+.delorian{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.ecto-1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.ghostb{
+  position: absolute;
+  top:1350px;
+  left:75%;
+  padding: 2px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-left: 20px;
+  width: 25%;
+  z-index: 2;
+}
+.d20{
+  position: relative;
+  top:-300px;
+  left:50px;
+  padding: 2px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-left: 20px;
+  width: 25%;
+  z-index: 1;
+  float: left;
+}
+.column {
+ float: right;
+ width: 33.33%;
+ padding: 5px;
+}
+.row::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+.anim{
+  animation-name: drive;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.anim2{
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.anim3{
+  animation-name: rainbow;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+.spaceinvaders{
+  position: relative;
+  right: 200px;
+}
+.model{
+  margin: auto 0;
+  text-align: center;
+}
+.author{
+  background-color: black;
+}
+
+@keyframes drive {
+  0% {left: 1000px; top: 0px;}
+  100% {left: -1500px; top: 0px;}
+}
+@keyframes rotate {
+  0% {transform: scaleX(-1);}
+}
+@keyframes rainbow {
+  0% {color: black;}
+  5% {color: red;}
+  15% {color: orange}
+  25% {color: yellow;}
+  35% {color: #7DFF33;}
+  45% {color: green;}
+  55% {color: #45F0FF;}
+  65% {color: blue;}
+  75% {color: #FF3AC8;}
+  85% {color: #AD2EFF;}
+  95% {color: white;}
+  100% {color: black;}
+}
